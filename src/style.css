@@ -34,7 +34,7 @@ p {
   border-radius: 25px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   margin-top: 20px;
-  padding: 30px;
+  padding: 20px;
 }
 .input {
   border: 1px solid rgba(33, 61, 66, 0.5);
@@ -60,8 +60,27 @@ p {
 .quote {
   background-color: white;
   border-left: 3px solid #5585b5;
+  font-size: 15px;
+  line-height: 1.5;
   margin: 25px auto;
   padding: 20px;
+  text-align: left;
+}
+.hidden {
+  display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 footer {
   font-family: monospace;

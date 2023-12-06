@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <script src="src/index.js"></script>
     <title>AI Quote Generator</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
           <small>e.g.: happiness, inspiration or joy</small>
         </p>
         <div class="form-container">
-          <form action="" id="quote-generator-form">
+          <form action="" id="quote-form-generator">
             <input
               type="text"
               placeholder="Enter the topic of the quote"
@@ -29,12 +30,12 @@
               required
               autocomplete="off"
               class="input"
-              id="user-instructions"
+              id="quote-topic"
             />
             <input type="submit" class="submit-button" />
           </form>
         </div>
-        <div class="quote hidden" id="quote">quote</div>
+        <div class="quote hidden" id="quote"></div>
       </main>
       <footer>
         Coded by
@@ -47,5 +48,6 @@
         <a href="https://ai-quote-generator-aif.netlify.app/">Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
