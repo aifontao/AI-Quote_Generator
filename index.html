@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/index.js"></script>
+    <title>AI Quote Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Quote Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form action="" id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="input"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Inspirational, Motivational or Loving</div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/aifontao" target="_blank">Ana Fontão</a>,
+        open-sourced on
+        <a href="" target="_blank">Github</a>
+        and hosted on
+        <a href="">Netlify</a>
+      </footer>
+    </div>
+  </body>
+</html>
