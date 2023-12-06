@@ -18,17 +18,24 @@ body {
 }
 h1 {
   color: #478e99;
-  margin: 15px;
+  font-size: 40px;
+  margin: 15px 30px 30px;
 }
-
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+p {
+  font-size: 14px;
+  margin: 30px 30px 0;
+}
 .form-container {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 30px;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  margin-top: 50px;
+  margin-top: 20px;
+  padding: 30px;
 }
-
 .input {
   border: 1px solid rgba(33, 61, 66, 0.5);
   border-radius: 50px;
@@ -39,7 +46,6 @@ h1 {
   padding: 16px;
   width: 50%;
 }
-
 .submit-button {
   background: #53a8b6;
   border: #53a8b6 solid;
@@ -57,7 +63,6 @@ h1 {
   margin: 25px auto;
   padding: 20px;
 }
-
 footer {
   font-family: monospace;
   margin-top: 35px;
