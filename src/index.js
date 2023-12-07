@@ -16,7 +16,7 @@ function generateQuote(event) {
   let apiKey = "aof4801f27bc8e543a47a5fc535tf9b8";
   let prompt = `User instructions: Generate a quote about ${quoteTopicInput.value}`;
   let context =
-    "You are a motivational quote writer. You write very inspiraring, happy and motivational quotes that brighten the readers day. Your mission is to generate a quote in basic HTML. Make sure to use the user instructions.";
+    "You are a motivational quote writer. You write very inspiraring, happy and motivational quotes that brighten the readers day. Your mission is to generate a quote in basic HTML. Make sure to use the user instructions. Do not add a title to the quote";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let quoteElement = document.querySelector("#quote");
